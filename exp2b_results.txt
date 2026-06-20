@@ -1,0 +1,29 @@
+Uploading 15 PDFs in parallel …
+  15/15 uploaded OK
+
+[fewshot] run 1: actionable_ok 10/15  signals_ok 12/15  overall 89.8%  (errored 0)
+[fewshot] run 2: actionable_ok 10/15  signals_ok 11/15  overall 90.2%  (errored 0)
+[fewshot] run 3: actionable_ok 10/15  signals_ok 12/15  overall 90.7%  (errored 0)
+[fewshot_rule] run 1: actionable_ok 13/15  signals_ok 11/15  overall 90.2%  (errored 0)
+[fewshot_rule] run 2: actionable_ok 13/15  signals_ok 11/15  overall 92.0%  (errored 0)
+[fewshot_rule] run 3: actionable_ok 13/15  signals_ok 11/15  overall 91.1%  (errored 0)
+
+Cleaning up uploaded files …
+
+=== COMPARISON (mean [min, max] over 3 trials) ===
+
+Docs w/ is_actionable exactly right  [PRIMARY Exp2]:
+   fewshot  : mean 10  range [10, 10]
+   fewshot_rule: mean 13  range [13, 13]
+
+Docs w/ signals exactly right:
+   fewshot  : mean 11.7  range [11, 12]
+   fewshot_rule: mean 11  range [11, 11]
+
+Corrected match % (excl. Ghani):
+   fewshot  : mean 92.9  range [92.4, 93.3]
+   fewshot_rule: mean 93.6  range [93.3, 94.3]
+
+Overall match %:
+   fewshot  : mean 90.2  range [89.8, 90.7]
+   fewshot_rule: mean 91.1  range [90.2, 92.0]

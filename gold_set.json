@@ -1,0 +1,411 @@
+[
+  {
+    "pdf": "278620.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "Atlas Battery Limited",
+    "subject": "HOLDING OF BOARD MEETING",
+    "announcement_signals": [
+      "Board Meeting",
+      "Closed Period"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": "2026-06-23",
+      "time": "02:30 PM"
+    },
+    "closure_details": {
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-23",
+      "type": "Closed Period"
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": ""
+  },
+  {
+    "pdf": "278624.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "NBP Fund Management Limited",
+    "subject": "Notice of Announcement of Dividend Distribution",
+    "announcement_signals": [
+      "Dividend"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Actionable: record dates June 18-26 are FUTURE; nulled due to multi-tranche schema limitation"
+  },
+  {
+    "pdf": "278628.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": null,
+    "company_name": "Sapphire Textile Mills Limited",
+    "subject": "CERTIFIED COPY OF THE RESOLUTIONS PASSED BY THE SHAREHOLDERS OF SAPPHIRE TEXTILE MILLS LIMITED AT THE EXTRAORDINARY GENERAL MEETING HELD ON 15TH JUNE 2026.",
+    "announcement_signals": [
+      "General Meeting",
+      "Director Election"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": "2026-06-15",
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Concluded meeting (held same day, no forward action)"
+  },
+  {
+    "pdf": "278630.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "Askari Bank Limited",
+    "subject": "Notice of Book Closure for 16th Semi Annual Profit Payment of Rated, Unsecured, OTC Listed Perpetual Term Finance Certificates (TFC-VI) Issue of Rs. 6,000 Million",
+    "announcement_signals": [
+      "Book Closure",
+      "Profit Payment"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": "2026-06-23",
+      "end_date": "2026-07-02",
+      "type": "Book Closure"
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": "2026-07-03",
+      "entitlement_record_date": null
+    },
+    "_note": "Rs 6,000M is issue size NOT payout -> payout_amount stays null"
+  },
+  {
+    "pdf": "278634.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "CHERAT CEMENT COMPANY LIMITED",
+    "subject": "BOARD MEETING OTHER THAN FINANCIAL RESULTS",
+    "announcement_signals": [
+      "Board Meeting",
+      "Closed Period"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": "2026-06-23",
+      "time": "3:30 p.m."
+    },
+    "closure_details": {
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-23",
+      "type": "Closed Period"
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": ""
+  },
+  {
+    "pdf": "278597.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "MCB Investment Management Limited",
+    "subject": "Interim Distribution",
+    "announcement_signals": [
+      "Dividend"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": 9.22,
+      "currency": "PKR",
+      "payment_due_date": null,
+      "entitlement_record_date": "2026-06-11"
+    },
+    "_note": "Record date June 11 already passed at issuance -> concluded -> False"
+  },
+  {
+    "pdf": "278602.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "Pakistan Hotels Developers Limited",
+    "subject": "Final Notice Regarding Unclaimed Shares & Dividends to vest with the Federal Government",
+    "announcement_signals": [
+      "Other"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Noise for an investor; no actionable event"
+  },
+  {
+    "pdf": "278607.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-12",
+    "company_name": "Wafi Energy Pakistan Limited",
+    "subject": "Emergent Board Meeting – Other than Financial Results",
+    "announcement_signals": [
+      "Board Meeting"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": "2026-06-16",
+      "time": "12:00 PM"
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": ""
+  },
+  {
+    "pdf": "278611.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "The Pakistan Credit Rating Agency Limited",
+    "subject": "Certified Copy of the Resolutions Passed and Adopted by the Shareholders in Extraordinary General Meeting (EOGM) Held on June 15, 2026",
+    "announcement_signals": [
+      "General Meeting"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": "2026-06-15",
+      "time": "11:00 AM"
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Concluded meeting"
+  },
+  {
+    "pdf": "278618.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "Shaheen Insurance Company Ltd.",
+    "subject": "Notice Under Section 159 (4) of the Companies Act 2017 (Election of Director)",
+    "announcement_signals": [
+      "Director Election"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": "2026-06-22",
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Election June 22 is future -> actionable"
+  },
+  {
+    "pdf": "278596.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "Nets International Communication Limited",
+    "subject": "UNUSUAL MOVEMENT IN PRICE OF THE SHARES OF NETS INTERNATIONAL COMMUNICATION LIMITED",
+    "announcement_signals": [
+      "Other"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Regulatory price-movement reply; no event. Good negative case."
+  },
+  {
+    "pdf": "278594.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-15",
+    "company_name": "MCB Investment Management Limited",
+    "subject": "Daily Dividend Distribution for 14-JUN-26",
+    "announcement_signals": [
+      "Dividend"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": 0.0132,
+      "currency": "PKR",
+      "payment_due_date": null,
+      "entitlement_record_date": "2026-06-14"
+    },
+    "_note": "PCF daily dist. Record date June 14 past at issuance -> False"
+  },
+  {
+    "pdf": "278586.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-13",
+    "company_name": "MCB Investment Management Limited",
+    "subject": "Daily Dividend Distribution for 12-JUN-26",
+    "announcement_signals": [
+      "Dividend"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": 0.0286,
+      "currency": "PKR",
+      "payment_due_date": null,
+      "entitlement_record_date": "2026-06-12"
+    },
+    "_note": "ALHDDF daily dist. Record date June 12 past -> False. VERIFY listing_date (doc dated June 13)"
+  },
+  {
+    "pdf": "278443.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-11",
+    "company_name": "TPL REIT Management Company Limited",
+    "subject": "Disclosure of Interest by a Director, CEO, or Executive of a Listed Company and their Spouses and the Substantial Shareholders u/c 5.6.4 of PSX Regulations",
+    "announcement_signals": [
+      "Other"
+    ],
+    "is_actionable_signal": false,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "Insider dealing disclosure; transactions already executed May 29. Number-trap test (rates/units are NOT payouts)."
+  },
+  {
+    "pdf": "278435-1.pdf",
+    "listing_date": "2026-06-15",
+    "document_date": "2026-06-11",
+    "company_name": "Ghani ChemWorld Limited",
+    "subject": "0.50% RIGHT ISSUE OF RS. 100/- PER SHARE (AT PAR)",
+    "announcement_signals": [
+      "Right Issue"
+    ],
+    "is_actionable_signal": true,
+    "meeting_details": {
+      "date": null,
+      "time": null
+    },
+    "closure_details": {
+      "start_date": null,
+      "end_date": null,
+      "type": null
+    },
+    "financials": {
+      "payout_amount": null,
+      "currency": null,
+      "payment_due_date": null,
+      "entitlement_record_date": null
+    },
+    "_note": "SCHEMA LIMITATION: right issue terms (ratio 0.50%, price Rs100/PRS, issue size Rs125,071,900, 9-step schedule) have NO schema fields. v2 needs corporate_action block. Also: Shari'ah compliance optional - not captured."
+  }
+]

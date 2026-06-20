@@ -1,0 +1,34 @@
+# Experiment 2 — BROAD actionable rule (dividend/profit-payment AND right issue)
+# 3 trials, temperature 1.0, per-call nonce. A-side = few-shot prompt; B-side adds the broad rule.
+
+Uploading 15 PDFs in parallel ...
+   15/15 uploaded OK
+
+[fewshot]      run 1: actionable_ok 10/15   signals_ok 11/15   overall 90.7%   (errored 0)
+[fewshot]      run 2: actionable_ok 12/15   signals_ok 10/15   overall 89.8%   (errored 0)
+[fewshot]      run 3: actionable_ok 10/15   signals_ok 12/15   overall 90.2%   (errored 0)
+[fewshot_rule] run 1: actionable_ok 12/15   signals_ok 13/15   overall 92.9%   (errored 0)
+[fewshot_rule] run 2: actionable_ok 12/15   signals_ok 12/15   overall 91.1%   (errored 0)
+[fewshot_rule] run 3: actionable_ok 13/15   signals_ok 13/15   overall 90.2%   (errored 0)
+
+Cleaning up uploaded files ...
+
+=== COMPARISON (mean [min, max] over 3 trials) — recomputed, see header note ===
+
+Docs w/ is_actionable exactly right  [PRIMARY Exp2]:
+   fewshot     : mean 10.7  range [10, 12]
+   fewshot_rule: mean 12.3  range [12, 13]   (BROAD rule: +1.6 net, but hides a regression)
+
+Docs w/ signals exactly right:
+   fewshot     : mean 11.0  range [10, 12]
+   fewshot_rule: mean 12.7  range [12, 13]
+
+Overall match %:
+   fewshot     : mean 90.2  range [89.8, 90.7]
+   fewshot_rule: mean 91.4  range [90.2, 92.9]
+
+# Interpretation: the broad rule lifts actionable_ok by ~1.6 on aggregate, but the per-document
+# diff (diag_actionable.py) shows +2 flips (278597, 278586) AND -1 regression (278435 Ghani right
+# issue) — the rule named "right issue", so the model wrongly applied past-record-date logic to it.
+# This motivated Exp 2b (narrow the rule to dividend/profit-payment only), which recovered Ghani
+# and held the flips: actionable_ok 13/15 every trial. See exp2b_results.txt.

@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────
+# Secrets — NEVER commit. A leaked API key in a public repo
+# stays in git history forever even if deleted later.
+# ─────────────────────────────────────────────────────────────
+.env
+.env.local
+*.key
+*.pem
+
+# ─────────────────────────────────────────────────────────────
+# Source data — PSX PDFs. Publish CODE, not DATA.
+# These are the source regulatory documents (and large binaries).
+# ─────────────────────────────────────────────────────────────
+*.pdf
+
+# ─────────────────────────────────────────────────────────────
+# Working / handoff docs — local scaffolding, not portfolio.
+# These reveal the build process; keep them off the public repo.
+# ─────────────────────────────────────────────────────────────
+PROJECT_CONTEXT.md
+WRITEUP_STRUCTURE.md
+
+# Note: the gold set (gold_set.json) and run logs (*_results.txt, full_run.txt)
+# ARE published as evidence — they're derived from public regulatory disclosures,
+# not PSX's restricted market-data feed. The source PDFs stay excluded above.
+
+# ─────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ─────────────────────────────────────────────────────────────
+# OS / editor cruft
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

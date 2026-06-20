@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PSXAnnouncementSchema",
+  "type": "object",
+  "properties": {
+    "listing_date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date the notice was posted on the PSX portal table (YYYY-MM-DD). Always present."
+    },
+    "document_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "The formal issuance date printed inside the letter itself (YYYY-MM-DD)."
+    },
+    "company_name": {
+      "type": "string",
+      "description": "The full legal name of the entity issuing the announcement."
+    },
+    "subject": {
+      "type": "string",
+      "description": "The exact subject line text extracted from the document header."
+    },
+    "announcement_signals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Board Meeting",
+          "Closed Period",
+          "Book Closure",
+          "Dividend",
+          "Bonus Issue",
+          "Right Issue",
+          "General Meeting",
+          "Director Election",
+          "Profit Payment",
+          "Other"
+        ]
+      },
+      "description": "Array of all distinct operational tracking signals present in the text."
+    },
+    "is_actionable_signal": {
+      "type": "boolean",
+      "description": "True if the document establishes immediate future or ongoing restrictions, entitlements, or required actions. False if it merely documents a historical event that already concluded."
+    },
+    "meeting_details": {
+      "type": "object",
+      "properties": {
+        "date": { "type": ["string", "null"], "format": "date", "description": "Upcoming scheduled meeting date (YYYY-MM-DD)." },
+        "time": { "type": ["string", "null"], "description": "Scheduled time string of the meeting." }
+      },
+      "required": ["date", "time"]
+    },
+    "closure_details": {
+      "type": "object",
+      "properties": {
+        "start_date": { "type": ["string", "null"], "format": "date", "description": "Start of book closure or closed period range (YYYY-MM-DD)." },
+        "end_date": { "type": ["string", "null"], "format": "date", "description": "End of book closure or closed period range (YYYY-MM-DD)." },
+        "type": {
+          "anyOf": [
+            { "type": "string", "enum": ["Closed Period", "Book Closure"] },
+            { "type": "null" }
+          ],
+          "description": "Explicit designation of the closure type."
+        }
+      },
+      "required": ["start_date", "end_date", "type"]
+    },
+    "financials": {
+      "type": "object",
+      "properties": {
+        "payout_amount": { "type": ["number", "null"], "description": "The distribution dividend amount or percentage value. Null if not explicitly declared." },
+        "currency": { "type": ["string", "null"], "description": "The currency unit or identifier for the payout distribution (e.g., 'PKR', 'Percent')." },
+        "payment_due_date": { "type": ["string", "null"], "format": "date", "description": "The explicit future date the payout cash/payout is distributed (YYYY-MM-DD)." },
+        "entitlement_record_date": { "type": ["string", "null"], "format": "date", "description": "The single cutoff date for shareholder register eligibility. Null if multi-tranche or absent." }
+      },
+      "required": ["payout_amount", "currency", "payment_due_date", "entitlement_record_date"]
+    }
+  },
+  "required": [
+    "listing_date", "document_date", "company_name", "subject", 
+    "announcement_signals", "is_actionable_signal", 
+    "meeting_details", "closure_details", "financials"
+  ]
+}

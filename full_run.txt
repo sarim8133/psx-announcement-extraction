@@ -1,0 +1,72 @@
+
+=== 278620.pdf | Atlas Battery Limited ===
+  [MISMATCH] announcement_signals: gold=['Board Meeting', 'Closed Period']  got=['Annual Budget 2026-27', 'Closed Period', 'HOLDING OF BOARD MEETING']
+
+=== 278624.pdf | NBP Fund Management Limited ===
+  [MISMATCH] announcement_signals: gold=['Dividend']  got=['Dividend Distribution', 'Entitlement Registration']
+  [MISMATCH] financials.payment_due_date: gold=None  got='2026-06-19'
+  [MISMATCH] financials.entitlement_record_date: gold=None  got='2026-06-18'
+
+=== 278628.pdf | Sapphire Textile Mills Limited ===
+  [MISMATCH] document_date: gold=None  got='2026-06-15'
+  [REVIEW]   subject: gold='CERTIFIED COPY OF THE RESOLUTIONS PASSED BY THE SHAREHOLDERS OF SAPPHIRE TEXTILE MILLS LIMITED AT THE EXTRAORDINARY GENERAL MEETING HELD ON 15TH JUNE 2026.'  got='CERTIFIED COPY OF THE RESOLUTIONS PASSED BY THE SHAREHOLDERS'
+  [MISMATCH] announcement_signals: gold=['Director Election', 'General Meeting']  got=['Approval of General Meeting minutes', 'Election of Directors']
+
+=== 278630.pdf | Askari Bank Limited ===
+  [MISMATCH] announcement_signals: gold=['Book Closure', 'Profit Payment']  got=['Book Closure', 'Semi Annual Profit Payment']
+
+=== 278634.pdf | CHERAT CEMENT COMPANY LIMITED ===
+  [MISMATCH] announcement_signals: gold=['Board Meeting', 'Closed Period']  got=['Board Meeting to consider budget', 'Closed Period declared']
+
+=== 278597.pdf | MCB Investment Management Limited ===
+  [MISMATCH] announcement_signals: gold=['Dividend']  got=['A dividend up to Rs. 9.22/- per unit will be paid', 'Interim Distribution']
+  [MISMATCH] is_actionable_signal: gold=False  got=True
+
+=== 278602.pdf | Pakistan Hotels Developers Limited ===
+  [MISMATCH] announcement_signals: gold=['Other']  got=['Call for Claims on Unclaimed Shares/Dividends', 'Final Notice Regarding Unclaimed Shares & Dividends']
+  [MISMATCH] is_actionable_signal: gold=False  got=True
+
+=== 278607.pdf | Wafi Energy Pakistan Limited ===
+  [REVIEW]   subject: gold='Emergent Board Meeting – Other than Financial Results'  got='Emergent Board Meeting - Other than Financial Results'
+  [MISMATCH] announcement_signals: gold=['Board Meeting']  got=['Board Meeting Scheduled', 'No Price-Sensitive Information']
+
+=== 278611.pdf | The Pakistan Credit Rating Agency Limited ===
+  [MISMATCH] announcement_signals: gold=['General Meeting']  got=['EOGM Held', 'Resolutions Not Approved', 'Special Audit Resolution Failed']
+
+=== 278618.pdf | Shaheen Insurance Company Ltd. ===
+  [REVIEW]   subject: gold='Notice Under Section 159 (4) of the Companies Act 2017 (Election of Director)'  got='Newspaper clippings Notice Under Section 159 (4) of the Companies Act 2017(Election of Director)'
+  [MISMATCH] announcement_signals: gold=['Director Election']  got=['Election of Director', 'Extra Ordinary General Meeting (EOGM)']
+  [MISMATCH] meeting_details.time: gold=None  got='02:30 p.m.'
+
+=== 278596.pdf | Nets International Communication Limited ===
+  [MISMATCH] announcement_signals: gold=['Other']  got=['Commitment to Disclosure', 'No Material Information', 'Response to PSX Inquiry']
+
+=== 278594.pdf | MCB Investment Management Limited ===
+  [MISMATCH] company_name: gold='MCB Investment Management Limited'  got='PAKISTAN CASH MANAGEMENT FUND (PCF)'
+  [MISMATCH] announcement_signals: gold=['Dividend']  got=['Dividend Announcement']
+
+=== 278586.pdf | MCB Investment Management Limited ===
+  [MISMATCH] announcement_signals: gold=['Dividend']  got=['A dividend of Re. .0286 per unit will be paid', 'Daily Dividend Distribution', 'approved the following payout']
+  [MISMATCH] is_actionable_signal: gold=False  got=True
+
+=== 278443.pdf | TPL REIT Management Company Limited ===
+  [MISMATCH] company_name: gold='TPL REIT Management Company Limited'  got='TPLREIT Fund I'
+  [MISMATCH] announcement_signals: gold=['Other']  got=['Board Meeting Agenda', "Director's Disclosure"]
+  [MISMATCH] is_actionable_signal: gold=False  got=True
+
+=== 278435-1.pdf | Ghani ChemWorld Limited ===
+  [MISMATCH] announcement_signals: gold=['Right Issue']  got=['Allotment of shares', 'Online Payment Option', 'Right Issue', 'Trading of unpaid Rights', 'dispatch of physical shares certificates']
+  [MISMATCH] closure_details.start_date: gold=None  got='2026-06-11'
+  [MISMATCH] closure_details.end_date: gold=None  got='2026-06-11'
+  [MISMATCH] closure_details.type: gold=None  got='Book Closure'
+  [MISMATCH] financials.payout_amount: gold=None  got=100.0
+  [MISMATCH] financials.currency: gold=None  got='PKR'
+  [MISMATCH] financials.payment_due_date: gold=None  got='2026-07-06'
+  [MISMATCH] financials.entitlement_record_date: gold=None  got='2026-06-10'
+
+------------------------------------------------
+Documents with load/parse errors : 0
+Fields compared                  : 225
+  Match                          : 190
+  Mismatch (real errors)         : 32
+  Review (subject, advisory)     : 3
