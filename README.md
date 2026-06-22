@@ -1,5 +1,36 @@
 # PSX Announcement Extraction
 
+**Pulling structured data out of messy financial PDFs using AI — with experiments to measure and prove how well it works.**
+
+---
+
+## What this project does (plain English)
+
+Pakistan's stock exchange (PSX) publishes company announcements as PDF files — dividend notices, board meeting alerts, book closures, and so on. These PDFs have no structured format; the important details (dates, amounts, company names) are buried in free text.
+
+This project uses a vision AI (Google Gemini) to **read those PDFs and extract the key facts into structured JSON** — something a computer can actually process.
+
+But the real point is not just extraction. It's **measuring how accurately the AI extracts**, then improving it step by step and proving that each improvement was real.
+
+**How it works in one line:**
+```
+PSX PDF  →  Quick filter (no AI)  →  AI reads & extracts  →  Structured JSON  →  Compare vs. answer key
+```
+
+**Experiments & results at a glance:**
+
+| Stage | Signals correct /15 | Actionable correct /15 | Overall field match % |
+|---|:---:|:---:|:---:|
+| Baseline | 2.3 | — | 85.8% |
+| + Exp 1 (format fix via few-shot) | 11.3 | 10.0 | 88.3% |
+| + Exp 2b (logic rule, narrowed) | 11.0 | **13.0** | **91.1%** |
+
+Three changes, each with a stated hypothesis, a measured result, and a named residual failure. The interesting part: the first version of Exp 2 looked like a net +1 on average but hid a per-document regression — a document that broke. Per-doc diffs catch what averages hide.
+
+---
+
+## Technical details
+
 **Structured data from scanned financial filings via a vision LLM — built around an evaluation-driven development loop.**
 
 This is a learning project, not a product. The point isn't the extractor; it's the loop around it: a hand-labeled gold set, a field-by-field evaluation harness, and three controlled prompt experiments — each with a stated hypothesis, a measured result reported with variance, and a named residual failure. I built it from raw API calls, no framework, so the mechanics (JSON parsing, schema validation, evaluation) stay visible.
